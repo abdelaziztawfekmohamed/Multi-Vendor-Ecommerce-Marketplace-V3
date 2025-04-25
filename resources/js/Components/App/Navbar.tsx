@@ -76,7 +76,7 @@ const Navbar = () => {
                             <li>
                                 <Link
                                     href={route("profile.edit")}
-                                    className="justify-between"
+                                    className="justify-between text-white/60 text-sm"
                                 >
                                     Profile
                                 </Link>
@@ -87,6 +87,7 @@ const Navbar = () => {
                                     href={route("logout")}
                                     as="button"
                                     method={"post"}
+                                    className="justify-between text-white/60 text-sm"
                                 >
                                     Logout
                                 </Link>
