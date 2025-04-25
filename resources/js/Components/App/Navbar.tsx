@@ -6,16 +6,19 @@ const Navbar = () => {
     return (
         <div className="navbar bg-base-100">
             <div className="flex-1">
-                <Link href="/" className="btn btn-ghost text-xl">
+                <Link
+                    href="/"
+                    className="btn btn-ghost shadow-sm text-xl text-white/75 hover:bg-gray-700/75 hover:rounded-xl border-none"
+                >
                     LaraStore
                 </Link>
             </div>
-            <div className="flex-none gap-4">
+            <div className="flex gap-4">
                 <div className="dropdown dropdown-end">
                     <div
                         tabIndex={0}
                         role="button"
-                        className="btn btn-ghost btn-circle"
+                        className="btn btn-ghost btn-circle text-white/75 hover:bg-gray-700/75"
                     >
                         <div className="indicator">
                             <svg
@@ -32,7 +35,7 @@ const Navbar = () => {
                                     d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
                                 />
                             </svg>
-                            <span className="badge badge-sm indicator-item">
+                            <span className="badge badge-sm indicator-item text-white/75">
                                 8
                             </span>
                         </div>
@@ -91,17 +94,20 @@ const Navbar = () => {
                         </ul>
                     </div>
                 ) : (
-                    <>
-                        <Link href={route("login")} className="btn">
+                    <div className="gap-2 flex">
+                        <Link
+                            href={route("login")}
+                            className="btn btn-neutral border-none text-white/75 hover:text-white rounded-xl"
+                        >
                             Login
                         </Link>
                         <Link
                             href={route("register")}
-                            className="btn btn-primary"
+                            className="btn btn-primary text-white/75 hover:text-white rounded-xl"
                         >
                             Register
                         </Link>
-                    </>
+                    </div>
                 )}
             </div>
         </div>

@@ -9,7 +9,10 @@ export default function PrimaryButton({
     return (
         <button
             {...props}
-            className={`btn btn-primary` + className}
+            className={
+                `btn btn-primary text-white/75 hover:text-white rounded-xl ` +
+                className
+            }
             disabled={disabled}
         >
             {children}

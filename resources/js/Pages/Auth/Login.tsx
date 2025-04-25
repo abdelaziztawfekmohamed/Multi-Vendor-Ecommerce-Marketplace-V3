@@ -33,8 +33,8 @@ export default function Login({
         <AuthenticatedLayout>
             <Head title="Log in" />
 
-            <div className="p-8">
-                <div className="card bg-white shadow max-w-[420px] mx-auto">
+            <div className="p-8 mt-12">
+                <div className="card bg-white dark:bg-gray-800 shadow max-w-[420px] mx-auto">
                     <div className="card-body">
                         {status && (
                             <div className="mb-4 text-sm font-medium text-green-600">
@@ -111,7 +111,7 @@ export default function Login({
                                 {canResetPassword && (
                                     <Link
                                         href={route("password.request")}
-                                        className="link"
+                                        className="link text-white/75 hover:text-white"
                                     >
                                         Forgot your password?
                                     </Link>

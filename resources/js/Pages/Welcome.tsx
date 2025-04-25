@@ -21,16 +21,20 @@ export default function Welcome({
     return (
         <AuthenticatedLayout>
             <Head title="Welcome" />
-            <div className="hero bg-gray-200 h-[300px]">
+            <div className="hero bg-base-200 h-[300px]">
                 <div className="hero-content text-center">
                     <div className="max-w-md">
-                        <h1 className="text-5xl font-bold">Hello there</h1>
-                        <p className="py-6">
+                        <h1 className="text-5xl font-bold text-white/70">
+                            Hello there
+                        </h1>
+                        <p className="py-6 text-white/75">
                             Provident cupiditate voluptatem et in. Quaerat
                             fugiat ut assumenda excepturi exercitationem quasi.
                             In deleniti eaque aut repudiandae et a id nisi.
                         </p>
-                        <button className="btn btn-primary">Get Started</button>
+                        <button className="btn btn-primary text-white/75 hover:text-white rounded-xl">
+                            Get Started
+                        </button>
                     </div>
                 </div>
             </div>

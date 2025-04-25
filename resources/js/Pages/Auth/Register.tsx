@@ -26,8 +26,8 @@ export default function Register() {
     return (
         <AuthenticatedLayout>
             <Head title="Register" />
-            <div className="p-8">
-                <div className="card bg-white shadow max-w-[420px] mx-auto">
+            <div className="p-8 mt-12">
+                <div className="card bg-white dark:bg-gray-800 shadow max-w-[420px] mx-auto">
                     <div className="card-body">
                         <form onSubmit={submit}>
                             <div>
@@ -127,8 +127,11 @@ export default function Register() {
                                 />
                             </div>
 
-                            <div className="mt-4 flex items-center gap-3 justify-end">
-                                <Link href={route("login")} className="link">
+                            <div className="mt-4 flex items-center  gap-3 justify-end">
+                                <Link
+                                    href={route("login")}
+                                    className="link text-white/75 hover:text-white"
+                                >
                                     Already registered?
                                 </Link>
 
