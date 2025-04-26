@@ -14,7 +14,7 @@ const Navbar = () => {
                 </Link>
             </div>
             <div className="flex gap-4">
-                <div className="dropdown dropdown-end">
+                <div className="dropdown dropdown-end static sm:relative">
                     <div
                         tabIndex={0}
                         role="button"
@@ -42,11 +42,15 @@ const Navbar = () => {
                     </div>
                     <div
                         tabIndex={0}
-                        className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow"
+                        className="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-full left-0 sm:left-auto sm:w-[480px] shadow"
                     >
-                        <div className="card-body">
-                            <span className="text-lg font-bold">8 Items</span>
-                            <span className="text-info">Subtotal: $999</span>
+                        <div className="card-body gap-4">
+                            <span className="text-lg font-bold text-white/60">
+                                8 Items
+                            </span>
+                            <span className="text-info text-white/60">
+                                Subtotal: $999
+                            </span>
                             <div className="card-actions">
                                 <button className="btn btn-primary btn-block text-white/75 hover:text-white rounded-xl">
                                     View cart
@@ -98,7 +102,7 @@ const Navbar = () => {
                     <div className="gap-2 flex">
                         <Link
                             href={route("login")}
-                            className="btn btn-neutral border-none text-white/75 hover:text-white rounded-xl"
+                            className="btn bg-base-200 border-none text-white/75 hover:text-white rounded-xl"
                         >
                             Login
                         </Link>
