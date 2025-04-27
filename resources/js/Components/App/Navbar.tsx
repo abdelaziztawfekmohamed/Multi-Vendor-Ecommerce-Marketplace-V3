@@ -102,7 +102,7 @@ const Navbar = () => {
                     <div className="gap-2 flex">
                         <Link
                             href={route("login")}
-                            className="btn bg-base-200 border-none text-white/75 hover:text-white rounded-xl"
+                            className="btn bg-base-200 text-white/75 hover:text-white rounded-xl"
                         >
                             Login
                         </Link>
